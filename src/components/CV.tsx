@@ -7,7 +7,7 @@ export default function CV() {
       <InfoSection
         education={[
           {
-            schoolName: "Knut Hahnsskolan",
+            schoolName: "TE, Knut Hahnsskolan",
             date: { from: "2019", to: "2023" },
           },
         ]}
@@ -20,14 +20,14 @@ export default function CV() {
           },
           {
             name: "Emric Månsson",
-            jobTitle: "Ägare av Symbistruct",
+            jobTitle: "Ägare",
             companyName: "Symbistruct",
             teleNo: "+46 73 326 96 82",
           },
           {
-            name: "Emil Holgersson",
-            jobTitle: "Ägare av SKFM Syd",
-            companyName: "Skorstensfejarmästarna Syd",
+            name: "Emil Holgersson (Fråga Emil)",
+            jobTitle: "Ägare",
+            companyName: "SKFM Syd",
             teleNo: "unknown",
           },
         ]}

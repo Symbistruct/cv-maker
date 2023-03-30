@@ -16,12 +16,14 @@ export default function Reference({ reference }: Props) {
   const { name, jobTitle, teleNo, email, companyName } = reference;
   return (
     <div className="py-2">
-      <P>{name}</P>
-      <P>
+      <P size="sm" className="mb-1">
+        {name}
+      </P>
+      <P size="xs">
         {jobTitle} | {companyName}
       </P>
-      <P>{teleNo}</P>
-      <P>{email}</P>
+      <P size="xs">{teleNo}</P>
+      <P size="xs">{email}</P>
     </div>
   );
 }

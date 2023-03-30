@@ -14,8 +14,10 @@ export default function Education({ education }: Props) {
 
   return (
     <div className="py-2">
-      <P>{schoolName}</P>
-      <P>
+      <P size="sm" className="mb-1">
+        {schoolName}
+      </P>
+      <P size="xs">
         {date.from} - {date.to}
       </P>
     </div>

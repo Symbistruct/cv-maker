@@ -9,10 +9,21 @@ export default function ContentSection() {
     <div className="w-[65%] h-full bg-[#f2f2f2] text-black text-sm">
       <Banner title="Melvin Wahlberg" secondTitle="Webbutvecklare" />
       <div className="w-full p-5">
-        <Section title="Om mig">
-          <P>
-            Mitt namn är Melvin Wahlberg och jag är en utvecklare som primärt
-            arbetar med JavaScript och TypeScript.
+        <Section className="pb-5" titleWideLetterSpacing title="Om mig">
+          <P className="py-4" size="xs">
+            <>
+              Mitt namn är Melvin Wahlberg och jag är en utvecklare som tycker
+              om att lära mig nya saker och att lösa nya utamingar. Min styrkor
+              är att jag är noggrann, lättlärd och effektiv. Mina främsta
+              förmågor inom programmering ligger i frontend utveckling, där jag
+              i mina föregående uppdrag mest har använt mig av TypeScript och
+              JavaScript.
+              <br />
+              <br />
+              På min fritid kodar jag inte bara, utan hittar ofta nya olika
+              hobbyer, men har och har alltid haft ett stort intresse för djur
+              och TV-spel.
+            </>
           </P>
         </Section>
 
@@ -21,8 +32,7 @@ export default function ContentSection() {
             {
               companyName: "Symbistruct",
               position: "Webbutvecklare",
-              workDescription:
-                "Under detta uppdrag jobbade jag mest med TypeScript och Tailwind i ramverket Remix. Git användes för versionskontroll.",
+              workDescription: "TypeScript, Tailwind, Remix, Git",
               period: {
                 started: "2023",
                 ended: "2023",
@@ -31,28 +41,16 @@ export default function ContentSection() {
             {
               companyName: "IKEA",
               position: "Webbutvecklare",
-              workDescription:
-                "Detta uppdraget använde sig mest av Typescript och Tailwind i ramverket React. Git användes för versionskontroll.",
+              workDescription: "Typescript, Tailwind, React, Git",
               period: {
                 started: "2022",
                 ended: "2023",
               },
             },
             {
-              companyName: "BS Gruppen",
-              position: "Kundtjänst",
-              workDescription:
-                "Jobbade i kundtjänst och hjälpte till med fakturering m.m.",
-              period: {
-                started: "2021",
-                ended: "2022",
-              },
-            },
-            {
               companyName: "Symbistruct",
               position: "Webbutvecklare",
-              workDescription:
-                "Arbetade med HTML, CSS och JavaScript. Git användes för versionskontroll.",
+              workDescription: "HTML, CSS, JavaScript, Git",
               period: {
                 started: "2021",
                 ended: "2022",
@@ -63,10 +61,13 @@ export default function ContentSection() {
 
         <SkillsSection
           skills={[
-            { name: "React", since: 2018 },
-            { name: "JavaScript", since: 2016 },
-            { name: "NodeJS", since: 2018 },
-            { name: "TypeScript", since: 2019 },
+            { name: "JavaScript", since: 2018 },
+            { name: "Git", since: 2018 },
+            { name: "CSS", since: 2018 },
+            { name: "HTML", since: 2018 },
+            { name: "React", since: 2021 },
+            { name: "NodeJS", since: 2021 },
+            { name: "TypeScript", since: 2021 },
             { name: "Remix", since: 2022 },
           ]}
         />

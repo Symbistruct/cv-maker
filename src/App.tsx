@@ -1,6 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import CV from "./components/CV";
 import CVComparison from "./components/CVComparison";
 

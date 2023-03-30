@@ -17,19 +17,23 @@ type Props = {
 
 export default function WorkExperienceSection({ experiences }: Props) {
   return (
-    <Section title="Arbetserfarenhet">
-      <div className="flex flex-col">
-        {experiences.map((exp) => (
-          <div className="flex flex-row pb-4">
+    <Section className="pb-5" titleWideLetterSpacing title="Arbetserfarenhet">
+      <div className="flex flex-col py-4">
+        {experiences.map((exp, i) => (
+          <div className="flex flex-row py-3" key={`${exp.companyName}-${i}`}>
             <div className="w-1/3">
-              <P>
+              <P size="xs">
                 {exp.period.started} - {exp.period.ended}
               </P>
             </div>
             <div className="w-2/3">
-              <P className="pb-1">{exp.position}</P>
-              <P className="pb-2">{exp.companyName}</P>
-              <P>{exp.workDescription}</P>
+              <P size="xs" bold>
+                {exp.position.toUpperCase()}
+              </P>
+              <P className="pb-3" size="xs">
+                {exp.companyName}
+              </P>
+              <P size="xs">{exp.workDescription}</P>
             </div>
           </div>
         ))}

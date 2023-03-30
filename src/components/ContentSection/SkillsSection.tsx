@@ -14,12 +14,20 @@ export default function SkillsSection({ skills }: Props) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Section title="Kunskaper och färdigheter">
-      <div className="flex flex-row flex-wrap">
-        {skills.map((skill) => (
-          <div className="w-1/2">
-            <P>{skill.name}</P>
-            <P>{(currentYear - skill.since).toString()} år</P>
+    <Section
+      className="pb-5"
+      titleWideLetterSpacing
+      title="Kunskaper och färdigheter"
+    >
+      <div className="flex py-4 flex-row flex-wrap">
+        {skills.map((skill, i) => (
+          <div className="w-1/3 p-2" key={`${skill.name}-${i}`}>
+            <P size="xs" className="text-center">
+              {skill.name}
+            </P>
+            <P size="sm" className="text-center">
+              {(currentYear - skill.since).toString()} år
+            </P>
           </div>
         ))}
       </div>
