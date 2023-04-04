@@ -17,7 +17,7 @@ type Props = {
 
 export default function WorkExperienceSection({ experiences }: Props) {
   return (
-    <Section className="pb-5" titleWideLetterSpacing title="Arbetserfarenhet">
+    <Section className="pb-4" titleWideLetterSpacing title="Arbetserfarenhet">
       <div className="flex flex-col py-4">
         {experiences.map((exp, i) => (
           <div className="flex flex-row py-3" key={`${exp.companyName}-${i}`}>

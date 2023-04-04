@@ -8,7 +8,7 @@ export default function Banner({
   secondTitle: string;
 }) {
   return (
-    <div className="w-full h-[7rem] mt-5 bg-[#fecb03] p-[2rem]">
+    <div className="w-full h-[3.5cm] mt-[0.75cm] bg-[#fecb03] p-[1.1cm]">
       <P size="2xl" wideLetterSpacing bold>
         {title.toUpperCase()}
       </P>

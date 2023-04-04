@@ -56,6 +56,11 @@ export default function InfoSection({
               </div>
 
               <div className="pb-2">
+                <P size="sm">Email:</P>
+                <P size="xs">{contactInfo.email}</P>
+              </div>
+
+              <div className="pb-2">
                 <P size="sm">LinkedIn:</P>
                 <P size="xs">{contactInfo.linkedIn}</P>
               </div>

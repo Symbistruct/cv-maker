@@ -8,26 +8,36 @@ type Skill = {
 
 type Props = {
   skills: Array<Skill>;
+  intro: string;
 };
 
-export default function SkillsSection({ skills }: Props) {
+export default function SkillsSection({ skills, intro }: Props) {
   const currentYear = new Date().getFullYear();
 
   return (
     <Section
-      className="pb-5"
+      className="py-5"
       titleWideLetterSpacing
       title="Kunskaper och färdigheter"
     >
-      <div className="flex py-4 flex-row flex-wrap">
+      <P className="py-5">{intro}</P>
+      <div className="flex py-4 px-5 flex-row flex-wrap">
         {skills.map((skill, i) => (
-          <div className="w-1/3 p-2" key={`${skill.name}-${i}`}>
-            <P size="xs" className="text-center">
-              {skill.name}
-            </P>
-            <P size="sm" className="text-center">
-              {(currentYear - skill.since).toString()} år
-            </P>
+          <div className="w-1/2 p-2" key={`${skill.name}-${i}`}>
+            <div className="py-2 px-3">
+              <P
+                size="xs"
+                className="text-center rounded-t-md py-2 bg-[#fecb03]"
+              >
+                {skill.name}
+              </P>
+              <P
+                size="sm"
+                className="text-white rounded-b-md py-2 bg-[#212027] text-center"
+              >
+                {(currentYear - skill.since).toString()} år
+              </P>
+            </div>
           </div>
         ))}
       </div>
