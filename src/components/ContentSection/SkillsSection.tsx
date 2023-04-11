@@ -20,21 +20,15 @@ export default function SkillsSection({ skills, intro }: Props) {
       titleWideLetterSpacing
       title="Kunskaper och färdigheter"
     >
-      <P className="py-5">{intro}</P>
-      <div className="flex py-4 px-5 flex-row flex-wrap">
+      <P className="py-5 text-text-main">{intro}</P>
+      <div className="flex justify-start py-4 flex-row flex-wrap text-text-main">
         {skills.map((skill, i) => (
-          <div className="w-1/2 p-2" key={`${skill.name}-${i}`}>
-            <div className="py-2 px-3">
-              <P
-                size="xs"
-                className="text-center rounded-t-md py-2 bg-[#fecb03]"
-              >
+          <div className="w-1/3 p-2" key={`${skill.name}-${i}`}>
+            <div className="py-2 px-3 bg-main-orange border-b-main-orange rounded-full">
+              <P size="xs" className="text-center">
                 {skill.name}
               </P>
-              <P
-                size="sm"
-                className="text-white rounded-b-md py-2 bg-[#212027] text-center"
-              >
+              <P size="xs" className="text-center ">
                 {(currentYear - skill.since).toString()} år
               </P>
             </div>

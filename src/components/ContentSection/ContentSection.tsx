@@ -3,14 +3,17 @@ import Section from "../Section";
 import Banner from "./Banner";
 import SkillsSection from "./SkillsSection";
 import WorkExperienceSection from "./WorkExperienceSection";
+import signatureImg from "../../images/signature.png";
+import Page from "./Page";
+import ReferencesSection from "./ReferencesSection";
 
 export default function ContentSection() {
   return (
-    <div className="w-[65%] h-full bg-[#f2f2f2] text-black text-sm">
+    <div className="w-[65%] bg-[#f2f2f2] text-black text-sm">
       <Banner title="Melvin Wahlberg" secondTitle="Webbutvecklare" />
-      <div className="w-full py-[2rem] px-[2.75rem] h-[23.65cm]">
+      <Page size="23.65">
         <Section className="pb-5" titleWideLetterSpacing title="Om mig">
-          <P className="py-5">
+          <P className="py-5 text-text-main">
             <>
               Mitt namn är Melvin Wahlberg och jag är en utvecklare som tycker
               om att lära mig nya saker och att lösa nya utamingar. Mina styrkor
@@ -19,7 +22,7 @@ export default function ContentSection() {
               <br />
               Här kan mina föregående uppdrag finnas, jag hoppas ni gillar det
               ni ser! För ytterliggare information se gärna min hemsida, eller
-              hör av dig till min mail vid några frågor.
+              hör av er till min mail vid några frågor.
             </>
           </P>
         </Section>
@@ -68,8 +71,9 @@ export default function ContentSection() {
             },
           ]}
         />
-      </div>
-      <div className="w-full py-[1rem] px-[2.75rem] h-[27.94cm]">
+      </Page>
+
+      <Page>
         <SkillsSection
           intro="Under åren har jag arbetat med många olika tekniker, ramverk och programmeringsspråk för att lyckas lösa alla problem som jag har stött på. Nedan finns några av de främsta som jag har arbetat med och ungefär hur länge jag har använt dem."
           skills={[
@@ -88,21 +92,52 @@ export default function ContentSection() {
           ]}
         />
         <div>
-          <P>
+          <P className="text-text-main">
             <>
               Som sagt innan gillar jag att lära mig nya saker, och drar mig
-              inte ifrån att lära mig nya tekniker om det krävs för att lösa
+              inte från att lära mig nya tekniker om det krävs för att lösa
               vissa problem, eller bara för att jag själv tycker om utmaningen
               att lära mig något nytt.
               <br />
               <br />
               Har du fler frågor angående mina förra uppdrag, eller vill du bara
-              veta mer om mig som person? Hör gärna av dig isåfall så kan vi
+              veta mer om mig som person? Hör gärna av er isåfall så kan vi
               prata vidare!
             </>
           </P>
         </div>
-      </div>
+      </Page>
+
+      <Page>
+        <ReferencesSection
+          references={[
+            {
+              name: "Jessica Viklund",
+              jobTitle: "Product Owner",
+              quote: `Melvin är en teamspelare och har fungerat mycket bra i vårt team även om han inte har jobbat full tid. Melvin håller bra kvalitet på det
+              som utvecklas. Han förstår snabbt vad som ska göras och vad som behöver göras och om han fastnar är han inte rädd för att be om
+              hjälp. Melvin är lätt att ha att göra med, en ansvarstagande, positiv och serviceminded person.`,
+              companyName: "IKEA",
+              teleNo: "+46 00 000 00 00",
+            },
+            {
+              name: "Emric Månsson",
+              jobTitle: "Ägare",
+              companyName: "Symbistruct",
+              quote: `Melvin började med programmering vid en tidig ålder och har gång på gång
+                imponerat mig sedan dess. Melvin är en duktig problemlösare som hjälper dig att
+                se problem från nya synvinklar. Han är alltid mån om att leverera kvalitet
+                samtidigt som stolhet aldrig står i vägen för hans sympatiska personlighet och
+                stora lagkänsla.`,
+              teleNo: "+46 73 326 96 82",
+              email: "emric@symbistruct.com",
+            },
+          ]}
+        />
+        <div className="pt-[5rem]">
+          <img className="w-1/2" src={signatureImg} />
+        </div>
+      </Page>
     </div>
   );
 }

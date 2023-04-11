@@ -5,7 +5,7 @@ type Props = {
   title: string;
   children: ReactElement | ReactElement[];
   className?: string;
-  hrColor?: "black" | "yellow" | "white";
+  hrColor?: "black" | "orange" | "white";
   titleWideLetterSpacing?: boolean;
 };
 
@@ -17,8 +17,8 @@ export default function Section({
   className,
 }: Props) {
   const getHrColor = () => {
-    if (hrColor === "yellow") {
-      return "bg-[#fecb03]";
+    if (hrColor === "orange") {
+      return "bg-main-orange";
     } else if (hrColor === "white") {
       return "bg-[#fcfcfc]";
     } else {

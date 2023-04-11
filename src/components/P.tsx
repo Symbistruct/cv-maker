@@ -6,6 +6,7 @@ type Props = {
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
   wideLetterSpacing?: boolean;
   bold?: boolean;
+  italic?: boolean;
 };
 
 export default function P({
@@ -14,6 +15,7 @@ export default function P({
   size,
   bold,
   wideLetterSpacing,
+  italic,
 }: Props) {
   const getTextSize = () => {
     switch (size) {
@@ -43,6 +45,7 @@ export default function P({
       </p>
     );
   }
+
   return (
     <p
       className={`${getTextSize()} ${

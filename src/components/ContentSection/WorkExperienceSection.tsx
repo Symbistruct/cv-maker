@@ -20,7 +20,10 @@ export default function WorkExperienceSection({ experiences }: Props) {
     <Section className="pb-4" titleWideLetterSpacing title="Arbetserfarenhet">
       <div className="flex flex-col py-4">
         {experiences.map((exp, i) => (
-          <div className="flex flex-row py-3" key={`${exp.companyName}-${i}`}>
+          <div
+            className="flex flex-row py-3 text-text-main"
+            key={`${exp.companyName}-${i}`}
+          >
             <div className="w-1/3">
               <P size="xs">
                 {exp.period.started} - {exp.period.ended}

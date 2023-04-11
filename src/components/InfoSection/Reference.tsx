@@ -6,6 +6,7 @@ export type ReferenceT = {
   companyName: string;
   teleNo: string;
   email?: string;
+  quote?: string;
 };
 
 type Props = {
@@ -13,17 +14,26 @@ type Props = {
 };
 
 export default function Reference({ reference }: Props) {
-  const { name, jobTitle, teleNo, email, companyName } = reference;
+  const { name, jobTitle, teleNo, email, companyName, quote } = reference;
   return (
-    <div className="py-2">
-      <P size="sm" className="mb-1">
+    <div className="py-3">
+      <P size="sm" className="mb-0">
         {name}
       </P>
-      <P size="xs">
+      <P size="xs" className="mb-2">
         {jobTitle} | {companyName}
       </P>
-      <P size="xs">{teleNo}</P>
+      {quote ? (
+        <>
+          <P size="xs" className="mb-2 italic">
+            "{quote}"
+          </P>
+        </>
+      ) : (
+        <></>
+      )}
       <P size="xs">{email}</P>
+      <P size="xs">{teleNo}</P>
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function CV() {
       <button onClick={handlePrint}>Print out</button>
       <div
         ref={ref}
-        className={`bg-[#f2f2f2] h-[55.88cm] w-[21.6cm] flex flex-row`}
+        className={`bg-[#f2f2f2] h-[83.82cm] w-[21.6cm] flex flex-row`}
       >
         <InfoSection
           education={[
@@ -27,20 +27,25 @@ export default function CV() {
             {
               name: "Jessica Viklund",
               jobTitle: "Product Owner",
+              quote: `Melvin är en teamspelare och har fungerat mycket bra i vårt team [...] Melvin håller bra 
+              kvalitet på det som utvecklas.`,
               companyName: "IKEA",
-              teleNo: "unknown",
+              teleNo: "+46 00 000 00 00",
             },
             {
               name: "Emric Månsson",
               jobTitle: "Ägare",
               companyName: "Symbistruct",
+              quote:
+                "Melvin är en duktig problemlösare som hjälper dig att se problem från nya synvinklar.",
               teleNo: "+46 73 326 96 82",
+              email: "emric@symbistruct.com",
             },
             {
               name: "Emil Holgersson (Fråga Emil)",
               jobTitle: "Ägare",
               companyName: "SKFM Syd",
-              teleNo: "unknown",
+              teleNo: "+46 00 000 00 00",
             },
           ]}
           contactInfo={{

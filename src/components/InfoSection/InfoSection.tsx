@@ -22,62 +22,68 @@ export default function InfoSection({
   contactInfo,
 }: Props) {
   return (
-    <div
-      id="left-sidebar"
-      className="w-[35%] h-full bg-[#212027] text-white text-sm"
-    >
-      <img src={portraitImg} alt="Portrait" />
-      <div className="px-4 pt-[2rem] pb-3">
-        <Section hrColor="yellow" titleWideLetterSpacing title="Utbildning">
-          <div className="pl-4 pt-2">
-            {education.map((item, i) => (
-              <Education education={item} key={`${item.schoolName}-${i}`} />
-            ))}
-          </div>
-        </Section>
+    <div id="left-sidebar" className="w-[35%]">
+      <div className="h-[27.94cm] bg-[#212027] text-text-white text-sm">
+        <img src={portraitImg} alt="Portrait" />
+        <div className="px-4 pt-[2rem] pb-3 ">
+          <Section hrColor="orange" titleWideLetterSpacing title="Utbildning">
+            <div className="pl-4 pt-2">
+              {education.map((item, i) => (
+                <Education education={item} key={`${item.schoolName}-${i}`} />
+              ))}
+            </div>
+          </Section>
+        </div>
+        <div className="px-4 py-5">
+          <Section hrColor="orange" titleWideLetterSpacing title="Referenser">
+            <div className="pl-4 pt-2">
+              {references.map((reference, i) => (
+                <Reference
+                  reference={reference}
+                  key={`${reference.name}-${i}`}
+                />
+              ))}
+            </div>
+          </Section>
+        </div>
       </div>
-      <div className="px-4 py-3">
-        <Section hrColor="yellow" titleWideLetterSpacing title="Referenser">
-          <div className="pl-4 pt-2">
-            {references.map((reference, i) => (
-              <Reference reference={reference} key={`${reference.name}-${i}`} />
-            ))}
-          </div>
-        </Section>
-      </div>
 
-      <div className="px-4 py-3">
-        <Section hrColor="yellow" titleWideLetterSpacing title="Kontakt">
-          <div className="pl-4 pt-2">
-            <div className="py-2">
-              <div className="pb-2">
-                <P size="sm">Telefon:</P>
-                <P size="xs">{contactInfo.teleNo}</P>
-              </div>
+      <div className="h-[27.94cm] bg-[#212027] text-text-white text-sm">
+        <div className="px-4 py-[2rem]">
+          <Section hrColor="orange" titleWideLetterSpacing title="Kontakt">
+            <div className="pl-4 pt-2">
+              <div className="py-2">
+                <div className="pb-2">
+                  <P size="sm">Telefon:</P>
+                  <P size="xs">{contactInfo.teleNo}</P>
+                </div>
 
-              <div className="pb-2">
-                <P size="sm">Email:</P>
-                <P size="xs">{contactInfo.email}</P>
-              </div>
+                <div className="pb-2">
+                  <P size="sm">Email:</P>
+                  <P size="xs">{contactInfo.email}</P>
+                </div>
 
-              <div className="pb-2">
-                <P size="sm">LinkedIn:</P>
-                <P size="xs">{contactInfo.linkedIn}</P>
-              </div>
+                <div className="pb-2">
+                  <P size="sm">LinkedIn:</P>
+                  <P size="xs">{contactInfo.linkedIn}</P>
+                </div>
 
-              <div className="pb-2">
-                <P size="sm">Hemsida:</P>
-                <P size="xs">{contactInfo.website}</P>
-              </div>
+                <div className="pb-2">
+                  <P size="sm">Hemsida:</P>
+                  <P size="xs">{contactInfo.website}</P>
+                </div>
 
-              <div className="pb-2">
-                <P size="sm">Plats:</P>
-                <P size="xs">{contactInfo.address}</P>
+                <div className="pb-2">
+                  <P size="sm">Plats:</P>
+                  <P size="xs">{contactInfo.address}</P>
+                </div>
               </div>
             </div>
-          </div>
-        </Section>
+          </Section>
+        </div>
       </div>
+
+      <div className="h-[27.94cm] bg-[#212027] text-text-white text-sm"></div>
     </div>
   );
 }
