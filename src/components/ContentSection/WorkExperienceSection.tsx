@@ -1,3 +1,4 @@
+import { CVContents } from "../CV";
 import P from "../P";
 import Section from "../Section";
 
@@ -12,14 +13,14 @@ export type ExperienceT = {
 };
 
 type Props = {
-  experiences: Array<ExperienceT>;
+  experiences: CVContents["mainSection"]["experiences"];
 };
 
 export default function WorkExperienceSection({ experiences }: Props) {
   return (
-    <Section className="pb-4" titleWideLetterSpacing title="Arbetserfarenhet">
+    <Section className="pb-4" titleWideLetterSpacing title={experiences.title}>
       <div className="flex flex-col py-4">
-        {experiences.map((exp, i) => (
+        {experiences.content.map((exp, i) => (
           <div
             className="flex flex-row py-3 text-text-main"
             key={`${exp.companyName}-${i}`}

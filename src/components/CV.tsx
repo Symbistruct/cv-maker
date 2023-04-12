@@ -7,21 +7,25 @@ import { EducationT } from "./InfoSection/Education";
 import { ExperienceT } from "./ContentSection/WorkExperienceSection";
 import { SkillT } from "./ContentSection/SkillsSection";
 
-type CVContents = {
+export type CVContents = {
   sidebar: {
-    references: ReferenceT[];
-    education: EducationT[];
-    contactInfo: ContactInfoT;
+    references: { title: string; content: ReferenceT[] };
+    education: { title: string; content: EducationT[] };
+    contactInfo: { title: string; content: ContactInfoT };
   };
   mainSection: {
-    aboutMe: string[];
-    experiences: ExperienceT[];
+    aboutMe: { title: string; content: string[] };
+    experiences: { title: string; content: ExperienceT[] };
     skillsSection: {
-      intro: string;
-      skills: SkillT[];
-      outro: string[];
+      title: string;
+      yearsTranslation: string;
+      content: {
+        intro: string;
+        skills: SkillT[];
+        outro: string[];
+      };
     };
-    references: ReferenceT[];
+    references: { title: string; content: ReferenceT[] };
   };
 };
 
