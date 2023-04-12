@@ -1,17 +1,18 @@
 import P from "../P";
 import Section from "../Section";
 
-type Skill = {
+export type SkillT = {
   name: string;
   since: number;
 };
 
 type Props = {
-  skills: Array<Skill>;
+  skills: Array<SkillT>;
   intro: string;
+  outro: string[];
 };
 
-export default function SkillsSection({ skills, intro }: Props) {
+export default function SkillsSection({ skills, intro, outro }: Props) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -34,6 +35,13 @@ export default function SkillsSection({ skills, intro }: Props) {
             </div>
           </div>
         ))}
+      </div>
+      <div className="pt-5">
+        <P className="text-text-main">
+          {outro.map((text) => (
+            <P className="pb-4 last:pb-0">{text}</P>
+          ))}
+        </P>
       </div>
     </Section>
   );

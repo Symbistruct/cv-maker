@@ -20,9 +20,9 @@ export default function Section({
     if (hrColor === "orange") {
       return "bg-main-orange";
     } else if (hrColor === "white") {
-      return "bg-[#fcfcfc]";
+      return "bg-main-white";
     } else {
-      return "bg-[#1f1f1f]";
+      return "bg-main-black";
     }
   };
   return (
