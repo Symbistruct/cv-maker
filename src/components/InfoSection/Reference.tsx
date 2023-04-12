@@ -4,7 +4,7 @@ export type ReferenceT = {
   name: string;
   jobTitle: string;
   companyName: string;
-  teleNo: string;
+  teleNo?: string;
   email?: string;
   quote?: string;
 };

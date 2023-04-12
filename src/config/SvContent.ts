@@ -9,7 +9,7 @@ const SvContent = {
           quote: `Melvin är en teamspelare och har fungerat mycket bra i vårt team [...] Melvin håller bra 
         kvalitet på det som utvecklas.`,
           companyName: "IKEA",
-          teleNo: "+46 00 000 00 00",
+          teleNo: "+46 70 478 74 31",
         },
         {
           name: "Emric Månsson",
@@ -21,10 +21,10 @@ const SvContent = {
           email: "emric@symbistruct.com",
         },
         {
-          name: "Emil Holgersson (Fråga Emil)",
+          name: "Emil Holgersson",
           jobTitle: "Ägare",
           companyName: "SKFM Syd",
-          teleNo: "+46 00 000 00 00",
+          teleNo: "+46 73 529 71 07",
         },
       ],
     },
@@ -135,7 +135,8 @@ const SvContent = {
       att lära mig något nytt.`,
           `Har du fler frågor angående mina förra uppdrag, eller vill du bara
       veta mer om mig som person? Hör gärna av er isåfall så kan vi
-      prata vidare!`,
+      prata vidare! Du får även gärna kolla in min hemsida där du kan få en större
+      överblick över mina andra projekt som jag inte nämner här.`,
         ],
       },
     },

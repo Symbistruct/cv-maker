@@ -9,7 +9,7 @@ const EnContent = {
           quote: `Melvin is a team player who has worked very well in our team [...] Melvin maintains good
           quality of what is developed.`,
           companyName: "IKEA",
-          teleNo: "+46 00 000 00 00",
+          teleNo: "+46 70 478 74 31",
         },
         {
           name: "Emric Månsson",
@@ -21,10 +21,10 @@ const EnContent = {
           email: "emric@symbistruct.com",
         },
         {
-          name: "Emil Holgersson (Fråga Emil)",
+          name: "Emil Holgersson",
           jobTitle: "Owner",
           companyName: "SKFM Syd",
-          teleNo: "+46 00 000 00 00",
+          teleNo: "+46 73 529 71 07",
         },
       ],
     },
@@ -60,7 +60,7 @@ const EnContent = {
 
         `Here you will be able to find my previous assignments, I hope you like what you
       see! For more information, please do check out my website, or contact me via mail
-      if you have any other questions!`,
+      if you have any other questions.`,
       ],
     },
     experiences: {
@@ -134,7 +134,8 @@ const EnContent = {
           with learning new things if it is necessary to solve different challenges,
           or just because I like learning something new.`,
           `If you have any more questions about my previous assignments, or just want
-          to get to know me better; do not hesitate to contact me!`,
+          to get to know me better; do not hesitate to contact me or check out my website
+          for some of the projects that I don't mention here!`,
         ],
       },
     },
@@ -159,7 +160,7 @@ const EnContent = {
           quote: `Melvin started programming at a young age and has repeatedly impressed me since
           then. Melvin is a good problem solver who helps you see problems from different perspectives.
           He also cares about providing with quality while at the same time not letting pride get in the
-          way for his sympathetic personality and team spirit.`,
+          way of his sympathetic personality and team spirit.`,
           teleNo: "+46 73 326 96 82",
           email: "emric@symbistruct.com",
         },
