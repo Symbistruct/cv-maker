@@ -1,4 +1,8 @@
 const EnContent = {
+  banner: {
+    title: "Melvin Wahlberg",
+    secondTitle: "Web Developer",
+  },
   sidebar: {
     references: {
       title: "References",
@@ -13,7 +17,7 @@ const EnContent = {
         },
         {
           name: "Emric Månsson",
-          jobTitle: "Owner",
+          jobTitle: "CEO",
           companyName: "Symbistruct",
           quote:
             "Melvin is a good problem solver who helps you see problems from different perspectives.",
@@ -22,7 +26,7 @@ const EnContent = {
         },
         {
           name: "Emil Holgersson",
-          jobTitle: "Owner",
+          jobTitle: "CEO",
           companyName: "SKFM Syd",
           teleNo: "+46 73 529 71 07",
         },
@@ -40,11 +44,11 @@ const EnContent = {
     contactInfo: {
       title: "Contact",
       content: {
-        teleNo: "+46 79 347 17 10",
-        email: "privat.melvin.wahlberg@gmail.com",
-        linkedIn: "Melvin Wahlberg",
-        website: "melvinwahlberg.com",
-        address: "Ronneby, Sweden",
+        teleNo: { header: "Telephone", value: "+46 79 347 17 10" },
+        email: { header: "Email", value: "privat.melvin.wahlberg@gmail.com" },
+        linkedIn: { header: "LinkedIn", value: "Melvin Wahlberg" },
+        website: { header: "Website", value: "melvinwahlberg.com" },
+        address: { header: "Address", value: "Ronneby, Sweden" },
       },
     },
   },
@@ -58,8 +62,9 @@ const EnContent = {
       and to constantly solve new problems. My strengths are that I am very attentive,
       I learn new things easily and I also work efficiently.`,
 
-        `Here you will be able to find my previous assignments, I hope you like what you
-      see! For more information, please do check out my website, or contact me via mail
+        `I have been working part time for about 2 years while also being in school and here 
+        you will be able to find those previous assignments. I hope you like what you
+      see! For more information, please take a look at my website, or contact me via mail
       if you have any other questions.`,
       ],
     },
@@ -70,7 +75,7 @@ const EnContent = {
           companyName: "Symbistruct",
           position: "Web developer",
           workDescription:
-            "Developed a booking app in the JavaScript framework 'Remix'. The app can be found on my website under the project 'Bokahundtrim'. Important during this assignment: TypeScript, Tailwind, Remix, Git.",
+            "Developed a booking app in the JavaScript framework 'Remix'. The app can be found on my website under the project 'Bokahundtrim'. Techniques used: TypeScript, Tailwind, Remix, Git.",
           period: {
             started: "2023",
             ended: "2023",
@@ -80,7 +85,7 @@ const EnContent = {
           companyName: "IKEA",
           position: "Web Developer",
           workDescription:
-            "Developed an internal application for IKEA and its employees to help order pictures, furniture and other resources. The app used the framework 'React'. Important during this assignment: TypeScript, Tailwind, React, Git.",
+            "Developed an internal application for IKEA and its employees to help order pictures, 3d-models and more. The app used the framework 'React'. Techniques used: TypeScript, Tailwind, React, Git.",
           period: {
             started: "2022",
             ended: "2023",
@@ -90,7 +95,7 @@ const EnContent = {
           companyName: "SKFM Syd",
           position: "Customer Service",
           workDescription:
-            "Sat in customer service and helped with billing etc.",
+            "Worked in customer service and helped with billing etc.",
           period: {
             started: "2020",
             ended: "2022",
@@ -100,7 +105,7 @@ const EnContent = {
           companyName: "Symbistruct",
           position: "Web Developer",
           workDescription:
-            "Did smaller web developer tasks on a website using the framework 'Ruby on Rails'. Important during this task: HTML, CSS, JavaScript, Git, Ruby on Rails.",
+            "Did smaller web developer tasks using the framework 'Ruby on Rails'. Techniques used: HTML, CSS, JavaScript, Git, Ruby on Rails.",
           period: {
             started: "2021",
             ended: "2022",
@@ -114,7 +119,7 @@ const EnContent = {
       yearsTranslation: "years",
       content: {
         intro:
-          "During the years I have worked with many different programming languages, frameworks and other tools to manage to solve all the problems I have stumbled upon. Below you can find some of the tools I have worked with, and approximately how long I have been using them.",
+          "During my years as a developer I have worked with many different programming languages, frameworks and other tools to manage to solve all the problems I have stumbled upon. Below you can find some of the tools I have used, and approximately how long I have been using them.",
         skills: [
           { name: "JavaScript", since: 2018 },
           { name: "Git", since: 2018 },
@@ -130,12 +135,12 @@ const EnContent = {
           { name: "Remix", since: 2022 },
         ],
         outro: [
-          `As said previously: I like to learn new things, and I don't stall
-          with learning new things if it is necessary to solve different challenges,
-          or just because I like learning something new.`,
-          `If you have any more questions about my previous assignments, or just want
+          `As said previously I like to learn new things, and I don't stall
+          with learning new things if it is necessary to solve different challenges I face,
+          or just because I like the feeling of learning something new.`,
+          `If you have any questions about my previous assignments, or just want
           to get to know me better; do not hesitate to contact me or check out my website
-          for some of the projects that I don't mention here!`,
+          for some of the projects that I failed to mention here!`,
         ],
       },
     },
@@ -155,7 +160,7 @@ const EnContent = {
         },
         {
           name: "Emric Månsson",
-          jobTitle: "Owner",
+          jobTitle: "CEO",
           companyName: "Symbistruct",
           quote: `Melvin started programming at a young age and has repeatedly impressed me since
           then. Melvin is a good problem solver who helps you see problems from different perspectives.

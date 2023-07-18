@@ -1,4 +1,8 @@
 const SvContent = {
+  banner: {
+    title: "Melvin Wahlberg",
+    secondTitle: "Webbutvecklare",
+  },
   sidebar: {
     references: {
       title: "Referenser",
@@ -40,11 +44,11 @@ const SvContent = {
     contactInfo: {
       title: "Kontakt",
       content: {
-        teleNo: "+46 79 347 17 10",
-        email: "privat.melvin.wahlberg@gmail.com",
-        linkedIn: "Melvin Wahlberg",
-        website: "melvinwahlberg.com",
-        address: "Ronneby, Sverige",
+        teleNo: { header: "Telefon", value: "+46 79 347 17 10" },
+        email: { header: "Email", value: "privat.melvin.wahlberg@gmail.com" },
+        linkedIn: { header: "LinkedIn", value: "Melvin Wahlberg" },
+        website: { header: "Hemsida", value: "melvinwahlberg.com" },
+        address: { header: "Adress", value: "Ronneby, Sweden" },
       },
     },
   },
@@ -57,7 +61,8 @@ const SvContent = {
   om att lära mig nya saker och att lösa nya utamingar. Mina styrkor
   är att jag är noggrann, lättlärd och effektiv.`,
 
-        `Här kan mina föregående uppdrag finnas, jag hoppas ni gillar det
+        `Jag har arbetat deltid under de senaste 2 åren medan jag har gått i skolan och här kan 
+        mina föregående uppdrag finnas. Jag hoppas ni gillar det
   ni ser! För ytterliggare information se gärna min hemsida, eller
   hör av er till min mail vid några frågor.`,
       ],

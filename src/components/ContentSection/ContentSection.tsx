@@ -8,22 +8,26 @@ import Page from "./Page";
 import ReferencesSection from "./ReferencesSection";
 import { CVContents } from "../CV";
 
-type Props = CVContents["mainSection"];
+type Props = CVContents["mainSection"] & CVContents["banner"];
 
 export default function ContentSection({
   aboutMe,
   experiences,
   skillsSection,
   references,
+  title,
+  secondTitle,
 }: Props) {
   return (
     <div className="w-[65%] bg-main-white text-black text-sm">
-      <Banner title="Melvin Wahlberg" secondTitle="Webbutvecklare" />
+      <Banner title={title} secondTitle={secondTitle} />
       <Page size="23.65">
         <Section className="pb-10" titleWideLetterSpacing title={aboutMe.title}>
-          {aboutMe.content.map((text) => (
-            <P className="pt-5 text-text-main">{text}</P>
-          ))}
+          <div className="pt-3">
+            {aboutMe.content.map((text) => (
+              <P className="pt-2 text-text-main">{text}</P>
+            ))}
+          </div>
         </Section>
 
         <WorkExperienceSection experiences={experiences} />

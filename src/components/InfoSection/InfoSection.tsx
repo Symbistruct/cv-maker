@@ -6,11 +6,11 @@ import P from "../P";
 import { CVContents } from "../CV";
 
 export type ContactInfoT = {
-  teleNo: string;
-  email: string;
-  linkedIn: string;
-  website: string;
-  address: string;
+  teleNo: { header: string; value: string };
+  email: { header: string; value: string };
+  linkedIn: { header: string; value: string };
+  website: { header: string; value: string };
+  address: { header: string; value: string };
 };
 
 type Props = CVContents["sidebar"];
@@ -65,28 +65,32 @@ export default function InfoSection({
             <div className="pl-4 pt-2">
               <div className="py-2">
                 <div className="pb-2">
-                  <P size="sm">Telefon:</P>
-                  <P size="xs">{contactInfo.content.teleNo}</P>
+                  <P size="sm">{contactInfo.content.teleNo.header}:</P>
+                  <P size="xs">{contactInfo.content.teleNo.value}</P>
                 </div>
 
                 <div className="pb-2">
-                  <P size="sm">Email:</P>
-                  <P size="xs">{contactInfo.content.email}</P>
+                  <P size="sm">{contactInfo.content.email.header}:</P>
+                  <P size="xs">{contactInfo.content.email.value}</P>
                 </div>
 
                 <div className="pb-2">
-                  <P size="sm">LinkedIn:</P>
-                  <P size="xs">{contactInfo.content.linkedIn}</P>
+                  <P size="sm">{contactInfo.content.linkedIn.header}:</P>
+                  <P size="xs">{contactInfo.content.linkedIn.value}</P>
                 </div>
 
                 <div className="pb-2">
-                  <P size="sm">Hemsida:</P>
-                  <P size="xs">{contactInfo.content.website}</P>
+                  <P size="sm">{contactInfo.content.website.header}:</P>
+                  <P size="xs">
+                    <a href={`https://${contactInfo.content.website.value}`}>
+                      {contactInfo.content.website.value}
+                    </a>
+                  </P>
                 </div>
 
                 <div className="pb-2">
-                  <P size="sm">Plats:</P>
-                  <P size="xs">{contactInfo.content.address}</P>
+                  <P size="sm">{contactInfo.content.address.header}:</P>
+                  <P size="xs">{contactInfo.content.address.value}</P>
                 </div>
               </div>
             </div>

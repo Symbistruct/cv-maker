@@ -8,10 +8,17 @@ import { ExperienceT } from "./ContentSection/WorkExperienceSection";
 import { SkillT } from "./ContentSection/SkillsSection";
 
 export type CVContents = {
+  banner: {
+    title: string;
+    secondTitle: string;
+  };
   sidebar: {
     references: { title: string; content: ReferenceT[] };
     education: { title: string; content: EducationT[] };
-    contactInfo: { title: string; content: ContactInfoT };
+    contactInfo: {
+      title: string;
+      content: ContactInfoT;
+    };
   };
   mainSection: {
     aboutMe: { title: string; content: string[] };
@@ -29,11 +36,13 @@ export type CVContents = {
   };
 };
 
-export default function CV({ sidebar, mainSection }: CVContents) {
+export default function CV({ sidebar, mainSection, banner }: CVContents) {
   const ref = useRef(null);
   const handlePrint = useReactToPrint({
     content: () => ref.current,
   });
+
+  console.log(banner);
 
   return (
     <div>
@@ -48,6 +57,8 @@ export default function CV({ sidebar, mainSection }: CVContents) {
           contactInfo={sidebar.contactInfo}
         />
         <ContentSection
+          title={banner.title}
+          secondTitle={banner.secondTitle}
           references={mainSection.references}
           skillsSection={mainSection.skillsSection}
           aboutMe={mainSection.aboutMe}
