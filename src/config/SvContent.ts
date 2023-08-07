@@ -84,7 +84,7 @@ const SvContent = {
           companyName: "IKEA",
           position: "Webbutvecklare",
           workDescription:
-            "Utvecklade en intern applikation för IKEA som skulle underlätta med att beställa bilder, möbler och andra resurser. Appen skrevs i 'React'. Viktigt i detta uppdrag: Typescript, Tailwind, React, Git.",
+            "Utvecklade en intern applikation för IKEA som skulle underlätta med att beställa bilder, 3d-modeller och andra resurser. Appen skrevs i 'React'. Viktigt i detta uppdrag: Typescript, Tailwind, React, Git.",
           period: {
             started: "2022",
             ended: "2023",
