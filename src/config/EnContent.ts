@@ -48,7 +48,7 @@ const EnContent = {
         email: { header: "Email", value: "privat.melvin.wahlberg@gmail.com" },
         linkedIn: { header: "LinkedIn", value: "Melvin Wahlberg" },
         website: { header: "Website", value: "melvinwahlberg.com" },
-        address: { header: "Address", value: "Ronneby, Sweden" },
+        address: { header: "Address", value: "Karlskrona, Sweden" },
       },
     },
   },
@@ -62,8 +62,9 @@ const EnContent = {
       and to constantly solve new problems. My strengths are that I am very attentive,
       I learn new things easily and I also work efficiently.`,
 
-        `I have been working part time for about 2 years while also being in school and here 
-        you will be able to find those previous assignments. I hope you like what you
+        `I have about 3 years experience of developing professionally, but I 
+        have been programming since I was 14 years old. Here you will be able 
+        to find all my previous assignments. I hope you like what you
       see! For more information, please take a look at my website, or contact me via mail
       if you have any other questions.`,
       ],

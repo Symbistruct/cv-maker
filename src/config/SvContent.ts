@@ -48,7 +48,7 @@ const SvContent = {
         email: { header: "Email", value: "privat.melvin.wahlberg@gmail.com" },
         linkedIn: { header: "LinkedIn", value: "Melvin Wahlberg" },
         website: { header: "Hemsida", value: "melvinwahlberg.com" },
-        address: { header: "Adress", value: "Ronneby, Sweden" },
+        address: { header: "Adress", value: "Karlskrona, Sverige" },
       },
     },
   },
@@ -61,10 +61,11 @@ const SvContent = {
   om att lära mig nya saker och att lösa nya utamingar. Mina styrkor
   är att jag är noggrann, lättlärd och effektiv.`,
 
-        `Jag har arbetat deltid under de senaste 2 åren medan jag har gått i skolan och här kan 
-        mina föregående uppdrag finnas. Jag hoppas ni gillar det
-  ni ser! För ytterliggare information se gärna min hemsida, eller
-  hör av er till min mail vid några frågor.`,
+        `Jag har cirka 3 års erfarenhet av att utveckla professionellt, men
+        har programmerat sedan jag var 14 år. I mitt CV kan ni finna alla
+        mina föregående uppdrag. Jag hoppas ni gillar det ni ser! För
+        ytterliggare information se gärna min hemsida, eller hör av er till
+        min mail vid några frågor.`,
       ],
     },
     experiences: {
@@ -138,9 +139,9 @@ const SvContent = {
       inte från att lära mig nya tekniker om det krävs för att lösa
       vissa problem, eller bara för att jag själv tycker om utmaningen
       att lära mig något nytt.`,
-          `Har du fler frågor angående mina förra uppdrag, eller vill du bara
+          `Har ni fler frågor angående mina förra uppdrag, eller vill ni bara
       veta mer om mig som person? Hör gärna av er isåfall så kan vi
-      prata vidare! Du får även gärna kolla in min hemsida där du kan få en större
+      prata vidare! Ni får även gärna kolla in min hemsida där ni kan få en större
       överblick över mina andra projekt som jag inte nämner här.`,
         ],
       },
