@@ -58,13 +58,13 @@ const SvContent = {
       title: "Om Mig",
       content: [
         `Mitt namn är Melvin Wahlberg och jag är en utvecklare som tycker
-  om att lära mig nya saker och att lösa nya utamingar. Mina styrkor
+  om att lära mig nya saker och att lösa nya utmaningar. Mina styrkor
   är att jag är noggrann, lättlärd och effektiv.`,
 
         `Jag har cirka 3 års erfarenhet av att utveckla professionellt, men
         har programmerat sedan jag var 14 år. I mitt CV kan ni finna alla
         mina föregående uppdrag. Jag hoppas ni gillar det ni ser! För
-        ytterliggare information se gärna min hemsida, eller hör av er till
+        ytterligare information se gärna min webbplats, eller hör av er till
         min mail vid några frågor.`,
       ],
     },
