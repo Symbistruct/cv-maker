@@ -127,12 +127,12 @@ const SvContent = {
           { name: "HTML", since: 2018 },
           { name: "HTML5", since: 2018 },
           { name: "NodeJS", since: 2020 },
-          { name: "Bootstrap", since: 2020 },
+          { name: "Jest", since: 2021 },
           { name: "React", since: 2021 },
           { name: "TypeScript", since: 2021 },
-          { name: "SCSS", since: 2021 },
           { name: "Tailwind", since: 2021 },
-          { name: "Remix", since: 2022 },
+          { name: "Cypress", since: 2022 },
+          { name: "RemixJS", since: 2022 },
         ],
         outro: [
           `Som sagt innan gillar jag att lära mig nya saker, och drar mig
