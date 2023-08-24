@@ -166,7 +166,7 @@ const SvContent = {
           quote: `Melvin började med programmering vid en tidig ålder och har gång på gång
           imponerat mig sedan dess. Melvin är en duktig problemlösare som hjälper dig att
           se problem från nya synvinklar. Han är alltid mån om att leverera kvalitet
-          samtidigt som stolhet aldrig står i vägen för hans sympatiska personlighet och
+          samtidigt som stolthet aldrig står i vägen för hans sympatiska personlighet och
           stora lagkänsla.`,
           teleNo: "+46 73 326 96 82",
           email: "emric@symbistruct.com",
